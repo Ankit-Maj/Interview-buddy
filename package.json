@@ -18,8 +18,5 @@
   "bugs": {
     "url": "https://github.com/Ankit-Maj/Interview-buddy/issues"
   },
-  "homepage": "https://github.com/Ankit-Maj/Interview-buddy#readme",
-  "dependencies": {
-    "vite": "^7.2.4"
-  }
+  "homepage": "https://github.com/Ankit-Maj/Interview-buddy#readme"
 }
