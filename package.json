@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm install --prefix backend && NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend",
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
     "start": "npm run start --prefix backend"
   },
   "repository": {
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Ankit-Maj/Interview-buddy/issues"
   },
-  "homepage": "https://github.com/Ankit-Maj/Interview-buddy#readme"
+  "homepage": "https://github.com/Ankit-Maj/Interview-buddy#readme",
+  "dependencies": {
+    "vite": "^7.2.4"
+  }
 }
