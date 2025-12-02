@@ -5,7 +5,7 @@ import App from './App.jsx'
 import { ClerkProvider } from '@clerk/clerk-react'
 import { BrowserRouter } from 'react-router'
 import { 
-  queryClient, 
+  QueryClient, 
   QueryClientProvider, 
   useQuery, 
 } from '@tanstack/react-query'
@@ -17,7 +17,7 @@ if (!PUBLISHABLE_KEY) {
   throw new Error('Missing Clerk Publishable Key')
 }
 
-const queryClient = new queryClient()
+const queryClient = new QueryClient()
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
