@@ -8,7 +8,7 @@ import { getDifficultyBadgeClass } from '../lib/utils';
 function ProblemsPage() {
   const problems = Object.values(PROBLEMS);
   const easyProblemsCount = problems.filter(p => p.difficulty === "Easy").length
-  const mediumProblemsCount = problems.filter(p => p.difficulty === "Medum").length
+  const mediumProblemsCount = problems.filter(p => p.difficulty === "Medium").length
   const hardProblemsCount = problems.filter(p => p.difficulty === "Hard").length
   return (
     <div className='min-h-screen bg-base-200'>
@@ -75,11 +75,11 @@ function ProblemsPage() {
                 <div className='stat-value text-success'>{easyProblemsCount }</div>
               </div>
               <div className='stat'>
-                <div className='stat-title'>Total Problems</div>
+                <div className='stat-title'>Medium</div>
                 <div className='stat-value text-warning'>{mediumProblemsCount }</div>
               </div>
               <div className='stat'>
-                <div className='stat-title'>Total Problems</div>
+                <div className='stat-title'>Hard</div>
                 <div className='stat-value text-error'>{hardProblemsCount }</div>
               </div>
             </div>
