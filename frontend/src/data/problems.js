@@ -339,6 +339,257 @@ print(maxArea([1,1]))  # Expected: 1`,
       java: "49\n1",
     },
   },
+
+    "merge-intervals": {
+    id: "merge-intervals",
+    title: "Merge Intervals",
+    difficulty: "Medium",
+    category: "Array • Sorting",
+    description: {
+      text: "Given an array of intervals where intervals[i] = [start_i, end_i], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.",
+      notes: [],
+    },
+    examples: [
+      {
+        input: "intervals = [[1,3],[2,6],[8,10],[15,18]]",
+        output: "[[1,6],[8,10],[15,18]]",
+      },
+      {
+        input: "intervals = [[1,4],[4,5]]",
+        output: "[[1,5]]",
+      },
+    ],
+    constraints: ["1 ≤ intervals.length ≤ 10⁴", "intervals[i].length == 2", "0 ≤ start_i ≤ end_i ≤ 10⁴"],
+    starterCode: {
+      javascript: `function merge(intervals) {
+  // Write your solution here
+  
+}
+
+// Test cases
+console.log(merge([[1,3],[2,6],[8,10],[15,18]])); // Expected: [[1,6],[8,10],[15,18]]
+console.log(merge([[1,4],[4,5]])); // Expected: [[1,5]]`,
+      python: `def merge(intervals):
+    # Write your solution here
+    pass
+
+# Test cases
+print(merge([[1,3],[2,6],[8,10],[15,18]]))  # Expected: [[1,6],[8,10],[15,18]]
+print(merge([[1,4],[4,5]]))  # Expected: [[1,5]]`,
+      java: `import java.util.*;
+
+class Solution {
+    public static int[][] merge(int[][] intervals) {
+        // Write your solution here
+        return new int[0][0];
+    }
+
+    public static void main(String[] args) {
+        System.out.println(Arrays.deepToString(merge(new int[][]{{1,3},{2,6},{8,10},{15,18}}))); // Expected: [[1,6],[8,10],[15,18]]
+        System.out.println(Arrays.deepToString(merge(new int[][]{{1,4},{4,5}}))); // Expected: [[1,5]]
+    }
+}` },
+    expectedOutput: {
+      javascript: "[[1,6],[8,10],[15,18]]\n[[1,5]]",
+      python: "[[1, 6], [8, 10], [15, 18]]\n[[1, 5]]",
+      java: "[[1, 6], [8, 10], [15, 18]]\n[[1, 5]]"
+    }
+  },
+
+  "longest-substring-without-repeating": {
+    id: "longest-substring-without-repeating",
+    title: "Longest Substring Without Repeating Characters",
+    difficulty: "Medium",
+    category: "String • Sliding Window",
+    description: {
+      text: "Given a string s, find the length of the longest substring without repeating characters.",
+      notes: [],
+    },
+    examples: [
+      { input: 's = "abcabcbb"', output: "3", explanation: 'The answer is "abc", length = 3.' },
+      { input: 's = "bbbbb"', output: "1", explanation: 'The answer is "b", length = 1.' },
+      { input: 's = "pwwkew"', output: "3", explanation: 'The answer is "wke", length = 3.' },
+    ],
+    constraints: ["0 ≤ s.length ≤ 5 * 10⁴", "s consists of English letters, digits, symbols and spaces."],
+    starterCode: {
+      javascript: `function lengthOfLongestSubstring(s) {
+  // Write your solution here
+  
+}
+
+// Test cases
+console.log(lengthOfLongestSubstring("abcabcbb")); // Expected: 3
+console.log(lengthOfLongestSubstring("bbbbb")); // Expected: 1
+console.log(lengthOfLongestSubstring("pwwkew")); // Expected: 3`,
+      python: `def lengthOfLongestSubstring(s):
+    # Write your solution here
+    pass
+
+# Test cases
+print(lengthOfLongestSubstring("abcabcbb"))  # Expected: 3
+print(lengthOfLongestSubstring("bbbbb"))  # Expected: 1
+print(lengthOfLongestSubstring("pwwkew"))  # Expected: 3`,
+      java: `class Solution {
+    public static int lengthOfLongestSubstring(String s) {
+        // Write your solution here
+        return 0;
+    }
+    public static void main(String[] args) {
+        System.out.println(lengthOfLongestSubstring("abcabcbb")); // Expected: 3
+        System.out.println(lengthOfLongestSubstring("bbbbb")); // Expected: 1
+        System.out.println(lengthOfLongestSubstring("pwwkew")); // Expected: 3
+    }
+}` },
+    expectedOutput: { javascript: "3\n1\n3", python: "3\n1\n3", java: "3\n1\n3" }
+  },
+
+  "three-sum": {
+    id: "three-sum",
+    title: "3Sum",
+    difficulty: "Medium",
+    category: "Array • Two Pointers",
+    description: {
+      text: "Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, j != k, and nums[i] + nums[j] + nums[k] == 0.",
+      notes: ["The solution set must not contain duplicate triplets."],
+    },
+    examples: [
+      {
+        input: "nums = [-1,0,1,2,-1,-4]",
+        output: "[[-1,-1,2],[-1,0,1]]",
+      },
+      { input: "nums = [0,1,1]", output: "[]" },
+      { input: "nums = [0,0,0]", output: "[[0,0,0]]" },
+    ],
+    constraints: ["3 ≤ nums.length ≤ 3000", "-10⁵ ≤ nums[i] ≤ 10⁵"],
+    starterCode: {
+      javascript: `function threeSum(nums) {
+  // Write your solution here
+  
+}
+
+// Test cases
+console.log(threeSum([-1,0,1,2,-1,-4])); // Expected: [[-1,-1,2],[-1,0,1]]
+console.log(threeSum([0,1,1])); // Expected: []
+console.log(threeSum([0,0,0])); // Expected: [[0,0,0]]`,
+      python: `def threeSum(nums):
+    # Write your solution here
+    pass
+
+# Test cases
+print(threeSum([-1,0,1,2,-1,-4]))  # Expected: [[-1,-1,2],[-1,0,1]]
+print(threeSum([0,1,1]))  # Expected: []
+print(threeSum([0,0,0]))  # Expected: [[0,0,0]]`,
+      java: `import java.util.*;
+
+class Solution {
+    public static List<List<Integer>> threeSum(int[] nums) {
+        // Write your solution here
+        return new ArrayList<>();
+    }
+    public static void main(String[] args) {
+        System.out.println(threeSum(new int[]{-1,0,1,2,-1,-4})); // Expected: [[-1,-1,2],[-1,0,1]]
+        System.out.println(threeSum(new int[]{0,1,1})); // Expected: []
+        System.out.println(threeSum(new int[]{0,0,0})); // Expected: [[0,0,0]]
+    }
+}` },
+    expectedOutput: { javascript: "[[-1,-1,2],[-1,0,1]]\n[]\n[[0,0,0]]", python: "[[-1, -1, 2], [-1, 0, 1]]\n[]\n[[0, 0, 0]]", java: "[[-1, -1, 2], [-1, 0, 1]]\n[]\n[[0, 0, 0]]" }
+  },
+
+  "group-anagrams": {
+    id: "group-anagrams",
+    title: "Group Anagrams",
+    difficulty: "Medium",
+    category: "String • Hash Map",
+    description: {
+      text: "Given an array of strings strs, group the anagrams together. You can return the answer in any order.",
+      notes: [],
+    },
+    examples: [
+      { input: 'strs = ["eat","tea","tan","ate","nat","bat"]', output: '[["bat"],["nat","tan"],["ate","eat","tea"]]' },
+      { input: "strs = ['']", output: '[[""]]' },
+      { input: "strs = ['a']", output: '[["a"]]' },
+    ],
+    constraints: ["1 ≤ strs.length ≤ 10⁴", "0 ≤ strs[i].length ≤ 100", "strs[i] consists of lowercase English letters"],
+    starterCode: {
+      javascript: `function groupAnagrams(strs) {
+  // Write your solution here
+  
+}
+
+// Test cases
+console.log(groupAnagrams(["eat","tea","tan","ate","nat","bat"]));`,
+      python: `def groupAnagrams(strs):
+    # Write your solution here
+    pass
+
+# Test cases
+print(groupAnagrams(["eat","tea","tan","ate","nat","bat"]))`,
+      java: `import java.util.*;
+
+class Solution {
+    public static List<List<String>> groupAnagrams(String[] strs) {
+        // Write your solution here
+        return new ArrayList<>();
+    }
+    public static void main(String[] args) {
+        System.out.println(groupAnagrams(new String[]{"eat","tea","tan","ate","nat","bat"}));
+    }
+}` },
+    expectedOutput: {
+      javascript: '[["bat"],["nat","tan"],["ate","eat","tea"]]',
+      python: '[["bat"],["nat","tan"],["ate","eat","tea"]]',
+      java: '[[bat], [nat, tan], [ate, eat, tea]]'
+    }
+  },
+
+  "word-ladder": {
+    id: "word-ladder",
+    title: "Word Ladder",
+    difficulty: "Hard",
+    category: "Graph • BFS",
+    description: {
+      text: "Given two words, beginWord and endWord, and a dictionary wordList, return the number of words in the shortest transformation sequence from beginWord to endWord, or 0 if no such sequence exists.",
+      notes: [
+        "Each transformation changes exactly one letter.",
+        "Each transformed word must exist in the word list.",
+      ],
+    },
+    examples: [
+      { input: 'beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log","cog"]', output: "5" },
+      { input: 'beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log"]', output: "0" },
+    ],
+    constraints: ["1 ≤ wordList.length ≤ 5000", "1 ≤ beginWord.length ≤ 10", "beginWord, endWord, wordList[i] are lowercase English letters"],
+    starterCode: {
+      javascript: `function ladderLength(beginWord, endWord, wordList) {
+  // Write your solution here
+  
+}
+
+// Test cases
+console.log(ladderLength("hit", "cog", ["hot","dot","dog","lot","log","cog"])); // Expected: 5
+console.log(ladderLength("hit", "cog", ["hot","dot","dog","lot","log"])); // Expected: 0`,
+      python: `def ladderLength(beginWord, endWord, wordList):
+    # Write your solution here
+    pass
+
+# Test cases
+print(ladderLength("hit", "cog", ["hot","dot","dog","lot","log","cog"]))  # Expected: 5
+print(ladderLength("hit", "cog", ["hot","dot","dog","lot","log"]))  # Expected: 0`,
+      java: `import java.util.*;
+
+class Solution {
+    public static int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        // Write your solution here
+        return 0;
+    }
+    public static void main(String[] args) {
+        System.out.println(ladderLength("hit", "cog", Arrays.asList("hot","dot","dog","lot","log","cog"))); // Expected: 5
+        System.out.println(ladderLength("hit", "cog", Arrays.asList("hot","dot","dog","lot","log"))); // Expected: 0
+    }
+}` },
+    expectedOutput: { javascript: "5\n0", python: "5\n0", java: "5\n0" }
+  },
+
 };
 
 export const LANGUAGE_CONFIG = {
