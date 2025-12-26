@@ -4,10 +4,10 @@
 Interview Buddy is a fullstack demo app for collaborative coding interviews: real‑time video, chat, and an in‑browser code editor with remote execution. This repo is designed to showcase fullstack engineering plus Git & GitHub workflow knowledge.
 
 ## 2. Key Features
-- Real‑time video + chat (Stream) — see [`backend/src/lib/stream.js`](backend/src/lib/stream.js) and [`frontend/src/lib/stream.js`](frontend/src/lib/stream.js)  
-- Session lifecycle: create, join, end — controllers: [`createSession`](backend/src/controllers/sessionController.js), [`joinSession`](backend/src/controllers/sessionController.js), [`endSession`](backend/src/controllers/sessionController.js)  
-- Code editor + remote execution via Piston — [`frontend/src/components/CodeEditorPanel.jsx`](frontend/src/components/CodeEditorPanel.jsx) and [`executeCode`](frontend/src/lib/piston.js)  
-- Authentication via Clerk — middleware: [`protectRoute`](backend/src/middleware/protectRoute.js) and Clerk provider usage in [`frontend/src/main.jsx`](frontend/src/main.jsx)
+- Live video calling and chat — Stream integration  
+- Interview session management: create, join, and end sessions  
+- Online code editor with remote code execution support  
+- Authentication and authorization handled via Clerk
 
 ## 3. Tech Stack
 - Frontend: React + Vite, Tailwind/DaisyUI, Monaco Editor, Stream video/chat, Clerk auth  
