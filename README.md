@@ -1,5 +1,7 @@
 # Interview Buddy — Fullstack Demo (Frontend + Backend)
 
+Live Link: https://interview-buddy-zmti.onrender.com/
+
 ## 1. Introduction
 Interview Buddy is a fullstack demo app for collaborative coding interviews: real‑time video, chat, and an in‑browser code editor with remote execution. This repo is designed to showcase fullstack engineering plus Git & GitHub workflow knowledge.
 
@@ -152,7 +154,7 @@ Include a clear .gitignore (already present at root and frontend): [/.gitignore]
 - Problem data: [frontend/src/data/problems.js](frontend/src/data/problems.js)  
 - Stream client init: [frontend/src/lib/stream.js](frontend/src/lib/stream.js) — [`initializeStreamClient`](frontend/src/lib/stream.js)
 
-## 15. Project Screenshots
+## 16. Project Screenshots
 
 <img width="1865" height="900" alt="image" src="https://github.com/user-attachments/assets/e70ec63a-bbf5-4347-9967-f765cd0ca56a" />
 
